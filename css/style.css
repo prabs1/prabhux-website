@@ -1,3 +1,9 @@
+/* Smooth cross-fade between pages on same-origin navigation. Supported in
+   Chrome/Edge; other browsers ignore this and just navigate normally. */
+@view-transition {
+  navigation: auto;
+}
+
 *,
 *::before,
 *::after {
@@ -353,16 +359,6 @@ button {
   to {
     transform: rotate(4deg);
   }
-}
-
-/* Temporary placeholder — remove once the next section is built */
-.placeholder-section {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #888;
-  background: #fafafa;
 }
 
 /* Library page */
