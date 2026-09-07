@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library — Prabhux</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:ital,wght@0,400;1,400;1,500&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="library-hero">
+        <!-- Layer order (back to front): mountain background, room photo
+             (its window cutout is transparent, so the mountain shows through) -->
+        <div class="library-layer library-bg">
+          <img src="assets/images/mountain-bg.png" alt="" />
+        </div>
+
+        <div class="library-layer library-clouds"></div>
+
+        <header class="hero-nav">
+          <nav class="nav-pill">
+            <a href="index.html" class="nav-logo">prabhux</a>
+            <a href="index.html#my-story">My Story</a>
+            <a href="index.html#my-craft">My Craft</a>
+            <a href="index.html#contact" class="nav-cta">Share Stories</a>
+          </nav>
+        </header>
+
+        <div class="library-layer library-room">
+          <img src="assets/images/library-room.png" alt="Library shelving in a wood-panelled room" />
+        </div>
+
+        <button
+          type="button"
+          class="library-book library-book-circuits"
+          id="book-trigger"
+          aria-haspopup="dialog"
+          aria-label="From Circuits to Pixels — open book"
+        >
+          <span class="library-book-glow" aria-hidden="true"></span>
+          <img
+            src="assets/images/electrician-book-cover.png"
+            alt="From Circuits to Pixels book cover"
+          />
+        </button>
+
+        <button
+          type="button"
+          class="library-book library-book-why"
+          id="book-trigger-why"
+          aria-label="Why? Design — book"
+        >
+          <span class="library-book-glow" aria-hidden="true"></span>
+          <img
+            src="assets/images/why-design-book-cover.png"
+            alt="Why? Design book cover"
+          />
+        </button>
+      </section>
+    </main>
+
+    <div class="book-modal" id="book-modal">
+      <div class="book-modal-backdrop" data-close></div>
+      <div
+        class="book-modal-paper"
+        role="dialog"
+        aria-modal="true"
+        aria-label="From Circuits to Pixels"
+      >
+        <button type="button" class="book-modal-close" data-close aria-label="Close">
+          &times;
+        </button>
+        <p>
+          In 2017, I started my career as an electrician. Later, I moved to
+          Chennai and worked at Royal Enfield as a production operator.
+        </p>
+        <p>
+          After losing my job, I decided to try something completely
+          different—design.
+        </p>
+        <p>
+          I started learning graphic design on my own, began freelancing in
+          2020, and eventually discovered UI/UX design.
+        </p>
+        <p>
+          Years of self-learning, rejections, feedback, and practice took me
+          from designing small graphics to leading design teams and building
+          digital products.
+        </p>
+        <p class="book-modal-closing">
+          From fixing wires to designing experiences — my career was never
+          planned, it was built.
+        </p>
+      </div>
+    </div>
+
+    <script src="js/library.js" defer></script>
+  </body>
+</html>
